@@ -1,0 +1,171 @@
+<html> <!-- comments are added like this -->
+<head>
+<title> Rudolf Tange's Homepage </title>
+<!-- This is how you can prevent caching (in the head, e.g. right after the </title> tag
+and maybe once again at the end in an extra head (<head>...</head>) between the </body> and </html> tag):
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+-->
+<!--the script below is for hiding and showing content-->
+<script language="javascript">
+function toggle(showHideDiv, switchTextDiv) {
+	var ele = document.getElementById(showHideDiv);
+	var text = document.getElementById(switchTextDiv);
+	if(ele.style.display == "block") {
+    		ele.style.display = "none";
+//              text.innerHTML = "restore";
+  	}
+	else {
+		ele.style.display = "block";
+//              text.innerHTML = "collapse";
+	}
+}
+</script>
+
+</head>
+
+<body>
+<h2 align="center"> Rudolf Tange's Homepage</h2>
+<b>Address: </b><br>
+Dr. R.H. Tange<br>
+<a href = "https://eps.leeds.ac.uk/maths">School of Mathematics</a><br>
+University of Leeds<br>
+LS2 9JT, Leeds, UK<br>
+Office: 9.20<br>
+tel. office: +44 (0)113 343 9246 <br>
+tel. secretariat: +44 (0)113 343 5101 <br>
+email: R.H.Tange "AT" leeds.ac.uk <br>
+<a href = "https://eps.leeds.ac.uk/maths/staff/4083/dr-rudolf-tange">my departmental page</a><br>
+<a href = "http://www1.maths.leeds.ac.uk/pure/algebra/">Leeds algebra page</a><br>
+<br>
+
+<!--
+<h3><FONT COLOR="blue">PhD position available</FONT></h3>
+This is part of an EPSC funded project in Lie theory, mainly in prime characteristic.</br>
+For more information and how to apply, see <a href = "http://www.exeter.ac.uk/studying/funding/award/?id=1433">this page</a>.
+-->
+
+<!--
+This should go in some file called .htaccess
+<Directory "https://github.com/rtange/public/pictures">
+  Options +Indexes
+</Directory>
+-->
+
+<h3> Teaching:</h3>
+<!--
+<ul>
+<li><a href = "https://github.com/rtange/public/teaching/Res_Math_Sci/Res_Math_Sci.html">
+Research in Mathematical sciences (ECMM736), Algebra</a>
+</ul>
+-->
+<h5> <a id="myHeader1" href="javascript:toggle('myContent1','myHeader1');">Past Courses</a></h5>
+<div id="myContent1" style="display: none">
+<ul>
+<li><a href = "https://github.com/rtange/public/teaching/old_courses/Groups_Rings_and_Fields/Groups_Rings_and_Fields.html">
+Groups, Rings and Fields (ECM2711, at Exeter)</a>
+<li><a href = "https://github.com/rtange/public/teaching/old_courses/Res_Math_Sci/Res_Math_Sci.html">
+Research in Mathematical Sciences, Algebra (ECMM736, at Exeter)</a>
+<li><a href = "https://github.com/rtange/public/teaching/old_courses/Modern_Algebra/Modern_Algebra.html">
+Modern Algebra (ECM3731, at Exeter)</a>
+<li><a href = "https://github.com/rtange/public/teaching/old_courses/lie_algebras/Lie_algebras.html">
+Introduction to Lie algebras (MA3415, at Trinity College Dublin)</a>
+<li><a href = "https://github.com/rtange/public/teaching/old_courses/group_theory/group_theory.html">
+Introduction to group theory (MA1214, at Trinity College Dublin)</a>
+<li><a href = "https://github.com/rtange/public/teaching/old_courses/algebraic_geometry/algebraic_geometry.html">
+Elementary projective and algebraic geometry (MA2318, at Trinity College Dublin)</a>
+</ul>
+</div>
+
+
+
+<h3> Research Interests </h3>
+<a href = "http://en.wikipedia.org/wiki/Sophus_Lie">Lie</a> (pron. ``Lee") theory in <a href = "http://en.wikipedia.org/wiki/Characteristic_%28algebra%29">positive characteristic</a>.
+<!--I am interested in representations and invariants of algebraic groups like the general linear group;
+mostly in characteristic p, but also in characteristic 0. The representations of the symplectic groups
+are strongly connected with the representations of the Brauer algebras.
+I am also interested in algebraic group actions. Geometry can help to understand representation
+theory and the other way around.-->
+
+<h3> Publications and Preprints </h3>
+<ul>
+<li><i> Invariants in divided power algebras</i>, Preprint.
+<a href = "https://github.com/rtange/public/research/truncatedinvs.pdf">pdf-file </a>
+<li><i> Injective and tilting resolutions for induced modules</i>, to appear in Algebr. Represent. Theory.
+<a href = "https://github.com/rtange/public/research/resolutions.pdf">pdf-file </a>
+<li><i> A combinatorial translation principle and diagram combinatorics for the general linear group</i>, Transform. Groups <b>28</b> (2023), no.4, 1687-1719.
+<a href = "https://github.com/rtange/public/research/schurbrauer3.pdf">pdf-file </a>
+<li> with H.Li, <i> A combinatorial translation principle and diagram combinatorics for the symplectic group</i>, to appear in Transform. Groups.
+<a href = "https://github.com/rtange/public/research/schurbrauer2.pdf">pdf-file </a>
+<li><i> Corrigendum to: On the first restricted cohomology of a reductive Lie algebra and its Borel subalgebras</i>, to appear in Ann. Inst. Fourier (Grenoble).
+<a href = "https://github.com/rtange/public/research/corrigendum.pdf">pdf-file </a><br>
+<i>Remark</i>: The corrigendum doesn't affect any results, only some proofs.
+<li><i> On the first restricted cohomology of a reductive Lie algebra and its Borel subalgebras</i>, Ann. Inst. Fourier (Grenoble) <b>69</b> (2019), no. 3, 1295-1308.
+<a href = "https://github.com/rtange/public/research/cohomology.pdf">pdf-file </a>
+<li> with A.Dent, <i> Bases for spaces of highest weight vectors in arbitrary characteristic</i>, Algebr. Represent. Theory <b>22</b> (2019), no. 5, 1133-1147.
+<a href = "https://github.com/rtange/public/research/semiinvs5.pdf">pdf-file </a>
+<li><i> Embeddings of spherical homogeneous spaces in characteristic p</i>, Math. Zeit. <b>288</b> (2018), no. 1-2, 491–508.
+<a href = "https://github.com/rtange/public/research/spherical2.pdf">pdf-file </a>
+<li><i> Highest weight vectors and transmutation</i>, Transform. Groups <b>24</b> (2019), no 2, 563-588.
+<a href = "https://github.com/rtange/public/research/semiinvs3.pdf">pdf-file </a>
+<li><i> Highest weight vectors for the adjoint action of GL_n on polynomials, II</i>, Transform. Groups <b>20</b> (2015), no. 3, 817-830.
+<a href = "https://github.com/rtange/public/research/semiinvs2.pdf">pdf-file </a>
+<li><i> Highest weight vectors for the adjoint action of GL_n on polynomials</i>, Pac. J. Math. <b>258</b> (2012), no. 2, 497-510.
+<a href = "https://github.com/rtange/public/research/semiinvs.pdf">pdf-file </a>
+<li><i> On embeddings of certain spherical homogeneous spaces in prime characteristic</i>, Transform. Groups. <b>17</b> (2012), no. 3, 861-888.
+<a href = "https://github.com/rtange/public/research/spherical.pdf">pdf-file </a>
+<li><i> Factorisation properties of group scheme actions</i>, Math. Zeit. <b>271</b> (2012), no. 1-2, 157-165.
+<a href = "https://github.com/rtange/public/research/equivariant_factorisation.pdf">pdf-file </a>
+<li><i> A bideterminant basis for a reductive monoid</i>, J. Pure and Applied Algebra. <b>216</b> (2012), no. 5, 1207-1221.
+<a href = "https://github.com/rtange/public/research/tableaux.pdf">pdf-file </a>
+<li><i> The Zassenhaus variety of a reductive Lie algebra in positive characteristic</i>, Adv. in Math. <b>224</b> (2010), no. 1, 340-354.
+<a href = "https://github.com/rtange/public/research/ufratgeneral.pdf">pdf-file </a>
+<li> with S.Donkin, <i> The Brauer algebra and the symplectic Schur algebra</i>, Math. Zeit. <b>265</b> (2010), no. 1, 187-219.
+<a href = "https://github.com/rtange/public/research/schurbrauer.pdf">pdf-file </a>
+<li><i> The symplectic ideal and a double centraliser theorem</i>, J. London Math. Soc. <b>77</b> (2008), no. 3, 687-699.
+<a href = "https://github.com/rtange/public/research/doubcen.pdf">pdf-file </a>
+<!--<a href = "http://jlms.oxfordjournals.org/cgi/reprint/77/3/687>pdf-file </a>-->
+<li><i> Infinitesimal invariants in a function algebra</i>, Canad. J. Math. <b>61</b> (2009), no.4, 950-960.
+<a href = "https://github.com/rtange/public/research/ufd.pdf">pdf-file </a>
+<li><i> The centre of quantum sl_n at a root of unity</i>, J.Algebra <b>301</b> (2006), no.1, 425-445.
+<a href = "https://github.com/rtange/public/research/quantumufrat.pdf">pdf-file </a><br>
+<i>Remark</i>: The erratum in J.Algebra <b>302</b> (2006), no.2, 897-898, is a typographical erratum to the printed version of this paper. J.Algebra is the author of it, not me.
+<li> with A.Premet, <i> Zassenhaus varieties of general linear Lie algebras</i>, J.Algebra <b>294</b> (2005), no.1, 177-195.
+<a href = "https://github.com/rtange/public/research/ufrat.pdf">pdf-file </a>
+<li> with M.Bate, B.Martin and G.Roehrle, <i> Closed orbits and uniform S-instability in geometric invariant theory</i>, Trans. Amer. Math. Soc. <b>365</b> (2013), no. 7, 3643-3673.
+<a href = "https://github.com/rtange/public/research/git.pdf">pdf-file </a>
+<li> with M.Bate, B.Martin and G.Roehrle, <i> Complete reducibility and conjugacy classes of tuples in algebraic groups and Lie algebras</i>, Math. Zeit. <b>269</b> (2011), no.3, 809-832.
+<a href = "https://github.com/rtange/public/research/relative.pdf">pdf-file </a>
+<li> with M.Bate, B.Martin and G.Roehrle, <i> Complete reducibility and separability</i>, Trans. Amer. Math. Soc. <b>362</b> (2010), no. 8, 4283-4311.
+<a href = "https://github.com/rtange/public/research/separability.pdf">
+pdf-file </a>
+</ul>
+</body>
+</html>
+
+
+
+<!--
+A page that forwards to another page:
+<html>
+<head>
+<script language="javascript">
+location.replace("https://github.com/rtange/public/index.html")
+</script>
+</head>
+</html>
+-->
+
+<!--
+To display LaTeX code put this in the head below the title:
+#the script below is for displaying LaTeX code
+#see also http://meta.math.stackexchange.com/questions/692/tex-implies-symbol-does-not-work for replacement symbols
+#and http://www.mathjax.org/docs/1.1/start.html#mathjax-cdn
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript"
+  src="https://d3eoax9i5htok0.cloudfront.net/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+--> 
