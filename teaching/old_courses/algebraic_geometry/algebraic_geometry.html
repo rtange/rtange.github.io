@@ -1,0 +1,162 @@
+<html>
+<!-- comments are added like this -->
+<head>
+<title> Elementary projective and algebraic geometry (MA2318) </title>
+
+<!--the script below is for displaying LaTeX code-->
+<!--<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript">-->
+<!--see also http://meta.math.stackexchange.com/questions/692/tex-implies-symbol-does-not-work for replacement symbols-->
+<!--and http://www.mathjax.org/docs/1.1/start.html#mathjax-cdn-->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript"
+ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<!--the script below is for hiding and showing content-->
+<script language="javascript">
+function toggle(showHideDiv, switchTextDiv) {
+	var ele = document.getElementById(showHideDiv);
+	var text = document.getElementById(switchTextDiv);
+	if(ele.style.display == "block") {
+    		ele.style.display = "none";
+//              text.innerHTML = "restore";
+  	}
+	else {
+		ele.style.display = "block";
+//              text.innerHTML = "collapse";
+	}
+}
+</script>
+
+</head>
+
+
+<body>
+<h2 align="center"> Elementary projective and algebraic geometry (MA2318) </h2>
+
+The departmental page for <a href = "http://www.maths.tcd.ie/pub/official/Courses11-12/MA2318.html">
+Elementary projective and algebraic geometry (MA2318)</a>.
+
+
+<h3><a id="myHeader1" href="javascript:toggle('myContent1','myHeader1');">Remarks about the course</a></h3>
+<div id="myContent1" style="display: none">
+The main source for this course is the book
+<i>Undergraduate Algebraic Geometry</i>, London Mathematical Society Student Texts, Cambridge University Press by Miles Reid.<br>
+Coursework will be marked, but will not count for the final grade. You are strongly advised to hand in the coursework, because this will
+give you a good idea of how well you understand the course material and how well-prepared you are for the exam.
+<h4>Tentative syllabus:</h4>
+Algebraic curves. Conics (or quadrics), their euclidean and affine classification over the fields of real and complex numbers. Projective plane, homogeneous coordinates, projective transformations. Lines in projective plane. Projective classification of conics. Parametrization of nondegenerate conics.
+<br><br>
+Homogeneous polynomials or forms. Roots of polynomials and their multiplicities. Bezout's Theorem, proof when one of the curve is a line or a quadric. Factorization of forms vanishing along lines and nondegenerate conics. Spaces of d-forms vanishing at certain points and their dimensions. Applications to quadrics passing through 5 points and cubics passing through 9 points. Pascal's Theorem.
+<br><br>
+Nodal and cuspidal cubics, their parametrization. Tangent lines. Group law on a cubic. Riemann surfaces and genus.
+<br><br>
+Affine algebraic sets, their ideals. Noetherian rings. Hilbert Basis Theorem. Algebraic sets defined by ideals, their properties. Zariski topology. Termination of descending chains of algebraic sets. Irreducible algebraic sets, their relation with prime ideals. Unique decomposition of algebraic set into irreducible components.
+<br><br>
+Nullstellensatz (Hilber Zero Theorem) and Weak Nullstellensatz. Proof of the Nullstellensatz assuming Weak Nullstellensatz.
+<br><br>
+Polynomial functions on affine algebraic sets. Coordinate ring. Polynomials maps between affine algebraic sets. Relation between polynomial maps and coordinate ring homomorphisms. Polynomial isomorphisms. Affine varieties. Rational functions on affine algebraic sets. Regular points of rational functions. Rational maps. Dominant maps.
+<br><br>
+Projective algebraic sets. Homogeneous ideals and correspondence between them and projective algebraic sets. The affine cone over a projective algebraic set. Rational functions on projective algebraic sets, rational maps between them. Regular points of rational functions and maps. Morphisms and isomorphisms. Segre embedding of the product of two projective spaces into another projective space. Finite unions, finite products, and arbitrary intersections of projective algebraic sets are again projective algebraic.
+<br><br>
+Possible extra topic: tangent spaces.
+<br><br>
+For more information and links, see <a href = "http://www.maths.tcd.ie/~zaitsev/2318-2011/2318.html">Dmitry Zaitsev's page on this course</a>.
+</div>
+
+<h3><a id="myHeader2" href="javascript:toggle('myContent2','myHeader2');">Learning outcomes</a></h3>
+<div id="myContent2" style="display: none">
+On successful completion of this module, students will be able to:
+<ul>
+<li> Give the affine classification of quadrics over $\mathbb{R}$ or $\mathbb{C}$ (you may assume the degree is $2$, not $<2$).
+Give the projective classification of quadrics over $\mathbb{R}$ or $\mathbb{C}$.
+<li> State Bezout's Theorem (the multiplicities do not have to be defined) and prove it in the case one of the curves is a line or a nondegenerate quadric using the standard parameterisation of a nondegenerate quadric and the result on factorisation of homogeneous polynomials in two variables. Use Bezout's Theorem to show that there exists a unique quadric passing trough $5$ distinct points in $\mathbb{P}^2$ no $4$ of which lie on a line.
+<li> Determine the projectivisation, the point(s) at infinity, the singular (= not smooth) points of a plane curve. Check that a point of a curve is an inflection point.
+<li> Explain what is meant by an affine or a projective algebraic set, when such a set is irreducible and what is meant by the irreducible components of such a set. Define what a (homogeneous) ideal is and describe the variety-ideal correspondence. State Hilbert's Basis Theorem and Hilbert's weak and strong Nullstellensatz.
+<li> Give the construction of the field of rational functions on an irreducible affine or projective algebraic set. Explain what the domain of a rational function is. Explain what a rational map or a morphism is between two affine or projective algebraic sets. Explain what is meant by the Segre embedding and indicate how it can be used to show that the product of two projective algebraic sets is again a projective algebraic set.
+</ul>
+</div>
+
+<h3><a id="myHeader3" href="javascript:toggle('myContent3','myHeader3');">Remarks about the lectures</a></h3>
+<div id="myContent3" style="display: none">
+<ul>
+<li> The lecture on Monday 16-1-2012.<br>
+An (invertible) affine transformation of $\mathbb{R}^2$ is a map $\varphi:\mathbb{R}^2\to\mathbb{R}^2$ of the form
+$$\varphi(\underline{v})=A\underline{v}+\underline{b}\,,\qquad(*)$$
+with $A\in\mathbb{R}^{2\times 2}$ invertible and $\underline{b}\in\mathbb{R}^2$. We have $\varphi^{-1}(\underline{v})=A^{-1}\underline{v}-A^{-1}(\underline{b})$.<br>
+One can look at the manipulations with a plane curve $C$ given by an equation $F(x,y)=0$ in two ways. Either we keep the curve fixed and transform the coordinates until the equation has a simple form or we keep the coordinates fixed and move the curve until the equation for the resulting curve has a simple form. In the first case we introduce new coordinates
+$\left(\begin{matrix} \tilde{x}\\ \tilde{y} \end{matrix}\right)=A\left(\begin{matrix} x \\ y \end{matrix}\right)+\underline{b}$ and the new equation is $\tilde{F}(\tilde{x},\tilde{y}):=F\big(A^{-1}\left(\begin{matrix} \tilde{x}\\ \tilde{y} \end{matrix}\right)-A^{-1}(\underline{b})\big)$. This substitution is the formal definition of $\tilde{F}(\tilde{x},\tilde{y})$; usually you obtain it in a more direct way. In the second case we define $\tilde{F}(x,y):=F\big(A^{-1}\left(\begin{matrix} x\\ y \end{matrix}\right)-A^{-1}(\underline{b})\big)$ and then we have $\tilde{F}(x,y)=0$ at $p$ if and only if $p\in\varphi(C)$, where $\varphi$ is given by (*).
+<li> The lecture on Monday 30-1-2012.<br>
+When I got the factorisation $Q=HH'$ with $p_1,p_2,p_3$ on $\{H=0\}$ I said that $\{H'=0\}$ is uniquely determined as the line through $p_4$ and $p_5$ ($Q$ is then of course, up to scalar multiples, uniquely determined as the product of $H$ and $H'$). The point was that we know that $Q$ passes through the $p_i$. So $Q(p_4)=Q(p_5)=0$. But no $4$ of the $p_i$ lie on a line, so we can't have $H(p_4)=0$ or $H(p_5)=0$. Therefore $H'(p_4)=0$ and $H'(p_5)=0$.
+<li> The lecture on Monday 6-2-2012.<br>
+The argument at the end of the proof of Pascal's Theorem was a bit brief. We were assuming $P,Q,R$ collinear, i.e. $R\in L$. At some point we got $F\in D=L\cup\Gamma$. If $F\in L$, then $L=L_1$, since they already have $P$ in common. But then $Q\in L_1$ and $M_2=L_1$ (they already have $A$ in common). This is a contradiction, since we assumed the $6$ lines $L_1,L_2,L_3,M_1,M_2,M_3$ to be distinct. So $F\in\Gamma$.
+<li> The lecture on Thursday 23-2-2012.<br>
+Exercise: Show that a quotient of a Noetherian commutative ring is again Noetherian. Put differently: Let $R$ be a Noetherian commutative ring and let $\rho:R\to S$ be a surjective ring homomorphism. Show that $S$ is Noetherian.
+<li> The lecture on Monday 5-3-2012.<br>
+I forgot to say that an irreducible topological space is supposed to be nonempty. 
+<li> The lecture on Thursday 8-3-2012.<br>
+For $\alpha\in\mathbb{A}^n$ we have $\mathfrak{m}_\alpha={\rm Ker}(ev_\alpha)=(X_1-\alpha_1,\ldots,X_n-\alpha_n)$, the ideal of $k[\underline{X}]$ generated by the elements $X_1-\alpha_1,\ldots,X_n-\alpha_n$. It is easy to see that every $k$-algebra homomorphism $k[\underline{X}]\to k$ is of the form $ev_\alpha$ for a (unique) $\alpha\in\mathbb{A}^n$. The fact that every maximal ideal is of the form $\mathfrak{m}_\alpha$ for a (unique) $\alpha\in\mathbb{A}^n$ is the content of Hilbert's Nullstellensatz.
+<li> The lecture on Thursday 15-3-2012.<br>
+A simpler definition of an affine variety: An affine variety is a set $X$ together with a subalgebra $k[X]$ of the algebra of functions $X\to k$ such that there exists an affine algebraic set $V$ in some affine space $\mathbb{A}^n$ and a bijection $\varphi:X\to V$ with $\varphi^*(k[V])=k[X]$. The point is that the topology of $X$ is determined by the algebra $k[X]$: a subset of $X$ is open if it is a (finite) union of sets of the form $X_f:=\{\alpha\in X\,|\,f(\alpha)\ne 0\}$, $f\in k[X]$. A set is closed if it is a (finite) intersection of sets of the form $V_X(f):=\{\alpha\in X\,|\,f(\alpha)=0\}$, $f\in k[X]$.<br>
+In the definition in the lectures I involved the topology, because in this form the definition comes closer to the general definition of an algebraic variety (which I will not give). Note that in both definitions $V$ and $\varphi$ just have to exist, they need not be naturally associated to $(X,k[X])$.
+<li> The lecture on Thursday 22-3-2012.<br>
+I forgot to prove that $X_f$ is an affine algebraic variety with algebra of regular functions $k[X_f]=k[X][f^{-1}]$ ($f^{-1}$ denotes the reciprocal of $f$ not the inverse of $f$ as a function).<br>
+The proof goes as follows. We may assume that $X$ is an algebraic set in an affine space $\mathbb{A}^n$. Let $I$ be the vanishing ideal of $X$. We use the affine space $\mathbb{A}^{n+1}=\mathbb{A}^n\times\mathbb{A}^1$ which has the coordinates $x_1,\ldots,x_n$ of $\mathbb{A}^n$ and an extra coordinate $y$. Define the map $\psi: X_f\to \mathbb{A}^{n+1}$ by $\psi(v)=(v,f(v)^{-1})$. Then $\psi$ is clearly injective and its image is the algebraic subset $Y$ of $\mathbb{A}^{n+1}$ which is the zero set of (the ideal of $k[\mathbb{A}^{n+1}]=k[x_1,\ldots,x_n,y]$ generated by) $I\cup\{\overline{f}y-1\}$. Here $\overline{f}$ is some polynomial function on $\mathbb{A}^n$ with $\overline{f}|_X=f$, any function $g$ on $\mathbb{A}^n$ is identified with the function $(v,a)\mapsto g(v)$ on $\mathbb{A}^{n+1}$ and of course $y$ is the function $(v,a)\mapsto a$. If $\varphi$ is $\psi$ considered as a map to $Y$, then we have $\varphi^*(k[Y])=\psi^*(k[\mathbb{A}^{n+1}])=k[X][f^{-1}]$. Here the first equality is general nonsense and the second one follows from $\psi^*(x_i)=x_i|_{X_f}$ and $\psi^*(y)=y\circ\psi=f^{-1}$.<br>
+An example of a rational function which is not given by one formula on its whole domain: Take the affine algebraic set in $\mathbb{A}^4$ defined by the equation $XV=YU$. Then $h=X/Y=U/V$ is defined at the point with $(X,Y,U,V)$-coordinates $(1,1,0,0)$, but also at the point $(0,0,1,1)$. For the first point the formula $X/Y$ can be used, but not $U/V$. For the second point it's the other way around.
+<li> The lecture on Monday 26-3-2012.<br>
+The construction of the function field of a projective algebraic set $V\subseteq \mathbb{P}^n$ can be summarised as follows. We first take the function field $k(V^a)$ of the affine cone $V^a=\{v\in\mathbb{A}^{n+1}\,|\,\exists_{p\in V}v\in p\}\subseteq\mathbb{A}^{n+1}$ of $V$ (recall the definition of the function field of an affine variety) and then we single out those rational functions $h\in k(V^a)$ whose value at a point $v\in {\rm Dom}(h)$ depends only on the line through that point and the origin: $h(\lambda v)=h(v)$ for all nonzero scalars $\lambda$. Those functions can be considered as functions on $V$ and together they form the function field $k(V)$ of $V$.<br>
+Note that in algebraic geometry a <i>cone</i> in $\mathbb{A}^{n}$ is an algebraic subset $C$ of $\mathbb{A}^{n}$ which is stable under scalar multiplication: $$v\in C\Rightarrow\lambda v\in C$$ for all $v\in C$ and all scalars $\lambda$. Alternatively, the cones in $\mathbb{A}^{n}$ are the zerosets in $\mathbb{A}^{n}$ of homogeneous ideals in $k[X_1,\dots,X_n]$. There is also another notion of cone over the real numbers which involves inequalities. But algebraic geometry is supposed to work for all (algebraically closed) fields, so this notion doesn't apply, since arbitrary fields do not have a reasonable ordering.
+<li> The lecture Thursday 29-3-2012.<br>
+An example of a rational map which is not everywhere defined is the rational map
+$$\varphi:(X_0:\cdots:X_m)\mapsto(X_0:\cdots:X_n)\,:\, \mathbb{P}^m\,-->\,\mathbb{P}^n\quad m>n.$$
+It is defined on the complement of $\{X_0=\cdots=X_n=0\}$ which is isomorphic to $\mathbb{P}^{m-n-1}$.<br><br>
+From now on we take $m=n+1$. Then $\varphi$ is defined everywhere except at the point $p_c=(0:\cdots:0:1)$ (indeed $\mathbb{P}^0$ is a point).
+If we embed $\mathbb{P}^n$ in $\mathbb{P}^{n+1}$ as $H=\{X_{n+1}=0\}$, then the map $\varphi$ has a geometrical interpretation: &ldquo;the projection from the point $p_c$ onto $H$&rdquo;. The image point $\varphi(q)$ of $q$ is the point where the line through $p_c$ and $q$ intersects $H$. Note that this works for any point $p_c$ and $H$ any projective hyperplane not containing $p_c$. Now we restrict to the affine piece $A=\{\sum_{i=0}^{n+1}X_i\ne 0\}$ (this piece contains contains $p_c$ and intersects $H$ nontrivially) and introduce affine coordinates $x_i=X_i/\sum_{i=0}^{n+1}X_i$, $i=1,\ldots,n+1$. Then $p_c$ has coordinates $(0,\cdots,0,1)$, $H_A=H\cap A$ is given by $x_{n+1}=0$ and $\varphi$ is given by
+$$(x_1,\ldots,x_{n+1})\mapsto (x_1/(1-x_{n+1}),\ldots,x_n/(1-x_{n+1}),0)\,.$$
+This is undefined at $x_{n+1}=1$, in accordance with the fact that for those points of $A$, the image under $\varphi$ lies outside $A$. In the cases $n=1,2$ and the field $\mathbb{R}$ you can illustrate this map with a picture. For $n=2$, the restriction of this map to a sphere $S\subseteq A$ with $S\cap\{x_{n+1}=1\}=p_c$ is the usual stereographic projection.<br>
+<a id="myHeader31" href="javascript:toggle('myContent31','myHeader31');">The case n=1 and its relation to nondegenerate quadrics.</a>
+<div id="myContent31" style="display: none">
+From now on we take $n=1$ (so $m=2$). We choose a nondegenerate quadric $Q\subseteq\mathbb{P}^2$ with $p_c\in Q$. Then the restriction of $\varphi$ to $Q$ is defined everywhere and it is an isomorphism $Q\stackrel{\sim}{\to}\mathbb{P}^1$. The point $p_c$ goes to the intersection point of the tangent line of $Q$ at $p_c$ with the line $H$.<br>
+I give two examples over $\mathbb{C}$. I work with other coordinates $(X,Y,Z)$ and with $\mathbb{P}^1$ rather than its embedding $H$.
+<ol>
+<li> Take $Q=\{X^2+Y^2=Z^2\}$, $p_c=(0:1:1)$, $\varphi=(X:Y:Z)\mapsto(X:Z-Y)$ and $H$ any line not containing $p_c$, i.e. $H=\{(Y=F(X,Z-Y)\}$ for some linear polynomial $F$ in two variables (e.g. $H=\{Y=0\}$). First we determine the inverse of $\varphi|_Q$. This is 
+$$(U:V)\mapsto(2UV:U^2-V^2:U^2+V^2)\,.$$
+Which is clearly defined everywhere. Note that the point at infinity $(1:0)$ of $\mathbb{P}^1$ goes to $p_c$ and that $(i:1)$ and $(-i:1)$ go to the points $(i:-1:0)$ and $(i:1:0)$ of $Q$ at infinity. In the affine coordinates $\lambda=U/V$ and $x=X/Z$, $y=Y/Z$ we have $p_c=(0,1)$, $Q=\{x^2+y^2=1\}$ and the maps are $(x,y)\mapsto x/(y-1)$ and $\lambda\mapsto(2\lambda/(\lambda^2+1),(\lambda^2-1)/(\lambda^2+1))$ which are the formulas from Reid's book page 9. An expression for $\varphi|_Q$ which is valid at $p_c$ is $(X:Y:Z)\mapsto(Y+Z:X)$. Considered as a rational map $\mathbb{P}^2\,-->\,\mathbb{P}^1$ this is the projection from $(0:1:-1)$ onto some line not containing $(0:1:-1)$. There is no single expression for $\varphi|_Q$ which is valid on all of $Q$.
+<li> Now take $Q=\{XZ=Y^2\}$, $p_c=(0:0:1)$, $\varphi=(X:Y:Z)\mapsto(X:Y)$ and $H$ any line not containing $p_c$, i.e. $H=\{(Z=F(X,Y)\}$ for some linear polynomial $F$ in two variables (e.g. $H=\{Z=0\}$). Then the inverse of $\varphi|_Q$ is
+$$(U:V)\mapsto(U^2:UV:V^2)\,.$$
+This map is clearly defined everywhere (it was already mentioned in Lecture $3$). The point $(0:1)$ goes to $p_c$. The point at infinity $(1:0)$ of $\mathbb{P}^1$ goes to the point $(1:0:0)$ of $Q$ at infinity. Note that $Q$ has only one point at infinity and the line of $\mathbb{P}^2$ at infinity is the tangent line of $Q$ at this point. In the affine coordinates $\lambda=U/V$ and $x=X/Z$, $y=Y/Z$ we have $p_c=(0,0)$, $Q=\{x=y^2\}$ and the maps are $(x,y)\mapsto x/y$ (on $Q$ this is the same as $(x,y)\mapsto y$) and $\lambda\mapsto(\lambda^2,\lambda)$. An expression for $\varphi|_Q$ which is valid at $p_c$ is $(X:Y:Z)\mapsto(Y:Z)$.
+</ol>
+</div>
+</ul>
+</div>
+
+<h3><a id="myHeader4" href="javascript:toggle('myContent4','myHeader4');">Other remarks</a></h3>
+<div id="myContent4" style="display: none">
+<ul>
+<li> I (and many others) have the bad habit to use variables both to denote a coordinate function and to denote some value that this function might take. For example $X$ usually denotes the first coordinate function on $\mathbb{A}^2$ or $\mathbb{A}^3$, but I also use it in formulas like &ldquo;$(X:Y:Z)\mapsto(X:Y)$&rdquo; to specify a rational map or morphism. If you don't like this you can drop the latter usage and write something like $(a:b:c)\mapsto (a:b)$.
+<li> For tangent space computations I will often work with differential $1$-forms on affine space. These are certain functions that assign to each point in affine space a linear function on $n$-space. For this I use the following classical formalism. A polynomial differential $1$-form on affine $3$-space is given by an expression of the form $$R(X,Y,Z)dX+S(X,Y,Z)dY+T(X,Y,Z)dZ\,,$$ with $P,Q,R$ polynomials. This $1$-form assigns to the point $p\in\mathbb{A}^3$ the linear function $R(p)X+S(p)Y+T(p)Z$. For example, $dX$ assigns to every point the linear function $X$, i.e. the projection on the first coordinate. So the &ldquo;$d$&rdquo; is there to prevent the variable on the right of it from being evaluated, and once we evaluated the form at a point we can omit the $d$. If you don't like this formalism, you can use different names for the variables occuring in the polynomials $P,Q,R$, e.g. $u_1,u_2,u_3$, then the above $1$-form is written as: $R(u_1,u_2,u_3)X+S(u_1,u_2,u_3)Y+T(u_1,u_2,u_3)Z$.
+</ul>
+</div>
+
+<h3> Exercises sheets </h3>
+<ul>
+<li>
+<a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/algebraic_geometry/sheet1.pdf">sheet 1</a>,
+    hand in at the beginning of the tutorial in week 3 (the week of 30 Jan).
+<!-- <a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/algebraic_geometry/solutions1.pdf">solutions 1</a>.-->
+<li>
+<a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/algebraic_geometry/sheet2.pdf">sheet 2</a>,
+    hand in at the end of the tutorial in week 5 (the week of 13 Feb).
+<!-- <a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/algebraic_geometry/solutions2.pdf">solutions 2</a>.-->
+<li>
+<a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/algebraic_geometry/sheet3.pdf">sheet 3</a>.
+<!--    <a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/algebraic_geometry/solutions3.pdf">solutions 3</a>.-->
+<li>
+<a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/algebraic_geometry/sheet4.pdf">sheet 4</a>.
+<!--    <a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/algebraic_geometry/solutions4.pdf">solutions 4</a>.-->
+</ul>
+</body>
+</html>
+

@@ -1,0 +1,191 @@
+<html>
+<!-- comments are added like this -->
+<head>
+<title> Introduction to group theory (MA1214) </title>
+
+<!--the script below is for displaying LaTeX code-->
+<!--<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript">-->
+<!--see also http://meta.math.stackexchange.com/questions/692/tex-implies-symbol-does-not-work for replacement symbols-->
+<!--and http://www.mathjax.org/docs/1.1/start.html#mathjax-cdn-->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript"
+ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<!--the script below is for hiding and showing content-->
+<script language="javascript">
+function toggle(showHideDiv, switchTextDiv) {
+	var ele = document.getElementById(showHideDiv);
+	var text = document.getElementById(switchTextDiv);
+	if(ele.style.display == "block") {
+    		ele.style.display = "none";
+//              text.innerHTML = "restore";
+  	}
+	else {
+		ele.style.display = "block";
+//              text.innerHTML = "collapse";
+	}
+}
+</script>
+
+</head>
+
+
+<body>
+<h2 align="center"> Introduction to group theory (MA1214)</h2>
+
+The departmental page for <a href = "http://www.maths.tcd.ie/pub/official/Courses11-12/MA1214.html">
+Introduction to group theory (MA1214)</a>.
+
+<h3><a id="myHeader1" href="javascript:toggle('myContent1','myHeader1');">Remarks about the course</a></h3>
+<div id="myContent1" style="display: none">
+The main source for this course is the book
+<i>Modern Algebra: An Introduction</i>, John Wiley & Sons by John R. Durbin.<br>
+Coursework will count for 20% of the final grade.
+<h4>Tentative syllabus:</h4>
+Sets and maps.<br>
+Binary relations, equivalence relations, and partitions.<br>
+Semigroups, monoids, and groups.<br>
+Integer division; Z_n as an additive group and a multiplicative monoid.<br>
+Remainder modulo n and integer division.<br>
+<br>
+The symmetric group S_n.<br>
+Parity and the alternating group.<br>
+Generators for S_n.<br>
+<br>
+Subgroups<br>
+Matrix groups: GL_n, SL_n, O_n, SO_n, U_n, SU_n.<br>
+The dihedral groups D_n and symmetries of the cube.<br>
+<br>
+Cosets and Lagrange's Theorem.<br>
+Additive subgroups of Z.<br>
+Greatest common divisor.<br>
+<br>
+Normal subgroups and quotient groups.<br>
+Homomorphisms and the first isomorphism theorem for groups.<br>
+Multiplicative group Z_n^*, Fermat's little theorem and the Chinese Remainder Theorem.<br>
+<br>
+Group actions.<br>
+A Sylow theorem.<br>
+The classification of finite abelian groups.
+</div>
+
+<h3><a id="myHeader2" href="javascript:toggle('myContent2','myHeader2');">Learning outcomes</a></h3>
+<div id="myContent2" style="display: none">
+On successful completion of this module, students will be able to:
+<ul>
+<li>Apply the notions: map/function, surjective/injective/bijective/invertible map, equivalence relation, partition.<br>
+Give the definition of: group, abelian group, subgroup, normal subgroup, quotient group, direct product of groups, homomorphism, isomorphism, kernel of a homomorphism, cyclic group, order of a group element.
+<li>Apply group theory to integer arithmetic: define what the greatest common divisor of two nonzero integers $m$ and $n$ is compute it and express it as a linear combination of $n$ and $m$ using the extended Euclidan algorithm; write down the
+Cayley table of a cyclic group $\mathbb{Z}_n$ or of the multiplicative group $(\mathbb{Z}_n)^\times$ for small $n$; determine the order of an element of such a group.
+<li>Define what a group action is and be able to verify that something is a group action.<br>
+Apply group theory to describe symmetry: know the three types of rotation symmetry axes of the cube (their &ldquo;order&rdquo; and how many there are of each type); describe the elements of symmetry group of the regular $n$-gon (the dihedral group $D_{2n}$) for small values of $n$ and know how to multiply them.
+<li>Compute with the symmetric group: determine disjoint cycle form, sign and order of a permutation; multiply two permutations.
+<li>Know how to show that a subset of a group is a subgroup or a normal subgroup. State and apply Lagrange's theorem. 
+State and prove the first isomorphism theorem.
+</ul>
+</div>
+
+<h3><a id="myHeader3" href="javascript:toggle('myContent3','myHeader3');">Remarks about the lectures</a></h3>
+<div id="myContent3" style="display: none">
+<ul>
+<li>The lecture on Monday 16-1-2012.<br>
+There are also other conventions to deal with functions. For example, some people define composition of functions as in the lectures, but drop the condition that the codomains should coincide for equality of functions. This makes the notion of surjectivity a bit problematic. Other people (e.g. Durbin) define equality of functions as in the lectures but require for $g\circ f$ to be defined that ${\rm codomain}(f)={\rm domain}(g)$. This has the disadvantage that in practice you have to make many versions of one function. For example, when you give the sine codomain $[-1,1]$ (or any other proper subset of $\mathbb{R}$ containing $[-1,1]$) you can't compose it with $x\mapsto x^2:\mathbb{R}\to\mathbb{R}$ and when you have given it codomain $\mathbb{R}$ you can't compose it with $x\mapsto 1/(x-2):\mathbb{R}\setminus\{2\}\to\mathbb{R}$.
+<li>The lecture on Monday 23-1-2012.<br>
+I think that I forgot to say that if $R$ is the equivalence relation corresponding to a map $f:A\to B$ ($xRy$ iff $f(x)=f(y)$), then $[x]_R=f^{-1}(\{f(x)\})$. The set of equivalence classes is $\{f^{-1}(y)\,|\,y\in\ {\rm range}(f)\}$.
+<li>The lecture on Friday 27-1-2012.<br>
+In a semigroup the operation is associative. This implies that we can write a product $x_1x_2\cdots x_r$ without putting brackets. For example $x_1x_2x_3x_4$ can be read as $(x_1x_2)(x_3x_4)$, $((x_1x_2)x_3)x_4$, $(x_1(x_2x_3))x_4$, $x_1((x_2x_3)x_4)$ or $x_1(x_2(x_3x_4))$. The result is always the same.<br>
+In a group the left and right cancellation laws hold: $xy=xz\Rightarrow y=z$ and $xz=yz\Rightarrow x=y$. I just show the first one: If $xy=xz$, then $y=x^{-1}xy=x^{-1}xz=z$.
+<li>The lecture on Friday 10-2-2012.<br>
+Verify one the identities $$\rho_{\varphi}r_L=r_{\rho_{(1/2)\varphi}(L)}\quad\text{and}\quad r_L\rho_{\varphi}r_L=\rho_{-\varphi}=\rho_\varphi^{-1}$$
+by drawing pictures.<br>
+The group $D_{2n}$ is generated by the elements $r$ and $\rho$. The identity $r\rho r=\rho^{-1}$ (or: $r\rho=\rho^{-1}r$) shows that this group is noncommutative, unless $n=2$ (then $\rho=\rho^{-1}$). You may want to exclude this case. In fact the proof of the inequality $|D_{2n}|\le 2n$ I gave is only valid for $n\ge3$.
+<li>The lecture on Monday 13-2-2012.<br>
+The tetrahedron has a symmetry group isomorphic to $S_4$ where the orientation preserving symmetries correspond to $A_4$ (the order is $12$). The octahedron has the same symmetry group as the cube. The group of orientation preserving symmetries is isomorphic to $S_4$ (the order is $24$). The icosahedron and dodecahedron also have the same symmetry group. It contains the inversion in the origin (minus the identity) and the orientation preserving symmetries form a group isomorphic to $A_5$ (the order is $60$).
+<li>The lecture on Friday 9-3-2012.<br><!--&#x22b4-->
+If $H\unlhd G$, then the group $G/H=\{xH\,|\,x\in G\}$ has unit element $H$ and we have $(xH)^{-1}=x^{-1}H$ for all $x\in G$.
+<li>The lecture on Monday 12-3-2012.<br>
+In the first part of the lecture (upto Fermat's Litle theorem) the group operation was multiplication, in the second part (Chinese Remaider Theorem) it was addition. Note that the statement of the Chinese Remaider Theorem amounts to the surjectivity of the map $\theta$ from the proof. You may have to think about this for a while. The surjectivity is shown by showing that the image group $\theta(\mathbb{Z})$ has the same number of elements ($n$) as the codomain $\mathbb{Z}_{n_1}\times\cdots\times\mathbb{Z}_{n_k}$, so it must be all of the codomain.<br>
+In the proof from the lectures &ldquo;$\theta(\mathbb{Z}/n\mathbb{Z})$&rdquo; or &ldquo;$\theta(\mathbb{Z}/\mathbb{Z}_n)$&rdquo; should be replaced by &ldquo;$\theta(\mathbb{Z})$&rdquo;. The kernel of $\theta$ is $n\mathbb{Z}=\langle n\rangle$.<br>
+<b>Exercise</b>. Show that the elements of $\mathbb{Z}_n^\times$ can alternatively be characterised as the elements that generate (on their own) the additive group $\mathbb{Z}_n$.
+<li>The lecture on Friday 23-3-2012.<br>
+<b>Exercise</b>. Let $\pi\in S_n$. Show that the cycles in the disjoint cycle form of $\pi$ correspond to the orbits of the cyclic group $\langle\pi\rangle$ on $\{1,\ldots,n\}$.
+<li>The lecture on Monday 26-3-2012.<br><!--\nmid=&#x2224-->
+I forgot to say that a subgroup of $G$ of order $p^r$ ($|G|=p^rm$ with $p\nmid m$) is called a <i>Sylow $p$-subgroup of $G$</i>. So Sylow's (first) Theorem says that, for $p$ a prime, any finite group $G$ has a Sylow $p$-subgroup.
+<li>The lecture on Friday 30-3-2012.<br>
+The statement $|A_1|=n_1$ and $|A_2|=n_2$ in the proposition was indeed correct, but the proof is a little bit involved, so I omitted it.<br>
+<b>Exercise</b>. Show that a subgroup $H$ of a cyclic group $G$ is again cyclic. <i>Hint</i>. There is a surjective homomorphism
+$\varphi:\mathbb{Z}\to G$. Now apply the theorem from Section 15 (Additive subgroups of $\mathbb{Z}$) to the inverse image $\varphi^{-1}(H)\le\mathbb{Z}$ and use that $H=\varphi(\varphi^{-1}(H))$.
+<li>The lecture on Monday 2-4-2012.<br>
+There is a general formula for the order of $[k]\in\mathbb{Z}_n$ or the order of an element $x^k$ in a cyclic group $\langle x\rangle$ of order $n$.  It is $n/{\rm gcd}(n,k)$. Note that the multiplicative groups $\mathbb{Z}_n^\times$ are in general not cyclic. For example, $\mathbb{Z}_8^\times$ is not cyclic. See the lecture on Friday 30-3-2012 (Section~25).
+</ul>
+</div>
+
+<h3><a id="myHeader4" href="javascript:toggle('myContent4','myHeader4');">Other remarks</a></h3>
+<div id="myContent4" style="display: none">
+<ul>
+<li> <a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/group_theory/book.pdf">Course notes</a>.
+<li> The three main principles that I used to denote sets were:<br>
+1) <i>Enumeration</i>: e.g. $\{a_1,a_2,\ldots,a_k\}$. To show that $b$ is in this set you have to show that $b=a_i$ for some integer $i$ with $1\le i\le k$.<br>
+2) <i>Replacement</i> or <i>Substitution</i>: e.g. the orbit $\{g\cdot x\,|\,g\in G\}$ of $x$. In general it looks like $\{E(x)\,|\,x\in A\}$, where $A$ is a set and $E(x)$ is an expression that denotes a mathematical object depending on $x$. The idea is that this set is the set obtained by &ldquo;replacing&rdquo; every element $x$ of $A$ by $E(x)$ (and deleting repetitions). To show that $y$ is in this set you have to show that $y=E(x)$ for some $x\in A$, i.e. there exists $x\in A$ such that $y=E(x)$.<br>
+3) <i>Selection</i>: e.g. the equivalence class $[x]=\{y\in X\,|\,y\sim x\}$. In general it looks like $\{x\in A\,|\,P(x)\}$, where $A$ is a set and $P(x)$ denotes a property of $x$. The idea is that you &ldquo;select&rdquo; from $A$ those elements that have property $P$. To show that $y$ is in this set you have to show that $y\in A$ and that $P(y)$ holds (&ldquo;$y$ has property $P$&rdquo;).<br><br>
+
+Whenever you see a set denoted like $\{\cdots|\cdots\}$ you should first determine whether it is formed according to 2) or according to 3).<br>
+In 2) and 3) above people also often write a semicolon &ldquo;$:$&rdquo; instead of the vertical bar &ldquo;$|$&rdquo;.
+<li><i>Important things that will keep coming back.</i>
+<ul>
+<li>The difference between sets, functions and things like numbers.
+For example, the kernel of a group homomorphism is a subset of its domain; in particular, it is a set.
+Be aware that many sets are subsets of a well-known big set. Put differently, for any given set determine of what type of objects it consists of.
+<li> Always make sure you know what the domain and codomain of a function are.
+Know how to compose two functions: $f\circ g$ (sometimes briefly written as $fg$, although that can also mean pointwise product) means <i>first</i> $g$, <i>then</i> $f$. In a formula: $$(f\circ g)(x)=f(g(x))\,$$ for all $x$ in the domain of $g$.<br>
+The notions injective (=one to one), surjective (=onto) and bijective (=injective & surjective).<br>
+The inverse image of a set, an equivalence relation, a partition.
+<li> The meaning of logical symbols $\Rightarrow,\wedge,\vee$ (can you write down their truth tables?) and $\forall$ and $\exists$. How to prove a statements of the form $P\Rightarrow Q$, $P\vee Q$, $\forall_{x\in A}P(x)$, etc.
+</ul>
+</ul>
+</div>
+
+<h3> Exercises sheets </h3>
+Coursework should be handed in during the week mentioned below, either at the beginning of the tutorial for your group or at the maths office well before it closes on Friday. Don't forget to mention <i>your name</i>, <i>your student number</i> and <i>your group</i> (A, B or C) on your coursework.<br>
+group A: Wed 15-16<br>
+group B: Wed 17-18<br>
+group C: Fri 16-17<br>
+If you didn't get your coursework back in the tutorial it is probably in the tray in front of my office 3.8. This tray is for collecting marked work only!
+<ul>
+<li>
+<a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/group_theory/sheet1.pdf">sheet 1</a>,
+    hand in during week 3 (the week of 30 Jan). For a finite set $X$ the symbol $|X|$ denotes the number of elements of $X$.
+<!-- <a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/group_theory/solutions1.pdf">solutions 1</a>.-->
+<li>
+<a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/group_theory/extraexercises1.pdf">extra exercises 1</a>.
+<!-- <a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/group_theory/extrasolutions1.pdf">extra solutions 1</a>.-->
+<li>
+<a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/group_theory/sheet2.pdf">sheet 2</a>.
+<!-- <a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/group_theory/solutions2.pdf">solutions 2</a>.-->
+<li>
+<a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/group_theory/sheet3.pdf">sheet 3</a>,
+<!-- <a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/group_theory/solutions3.pdf">solutions 3</a>.-->
+<li>
+<a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/group_theory/sheet4.pdf">sheet 4</a>.
+<!-- <a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/group_theory/solutions4.pdf">solutions 4</a>.-->
+<li>
+<a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/group_theory/sheet5.pdf">sheet 5</a>.
+<!-- <a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/group_theory/solutions5.pdf">solutions 5</a>.-->
+<li>
+<a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/group_theory/sheet6.pdf">sheet 6</a>.
+<!-- <a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/group_theory/solutions6.pdf">solutions 6</a>.-->
+<li>
+<a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/group_theory/sheet7.pdf">sheet 7</a>.
+<!-- <a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/group_theory/solutions7.pdf">solutions 7</a>,
+in the solutions I wrote &ldquo;${\rm int}(g)$&rdquo; (based on the French &ldquo;automorphisme interieur&rdquo;)
+rather than &ldquo;${\rm inner}(g)$&rdquo;.-->
+<li>
+<a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/group_theory/extraexercises2.pdf">extra exercises 2</a>,
+this is for the fanatics amongst you. It is not examinable and will not be marked, but (verbal) solutions can be obtained on request.
+</ul>
+</body>
+</html>
+

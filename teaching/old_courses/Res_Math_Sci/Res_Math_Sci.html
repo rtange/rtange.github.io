@@ -1,0 +1,222 @@
+<html>
+<!-- comments are added like this -->
+<head>
+<title> Research in Mathematical Sciences (ECMM736), Algebra</title>
+
+<!--the script below is for displaying LaTeX code-->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript"
+ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<!--the script below is for hiding and showing content-->
+<script language="javascript">
+function toggle(showHideDiv, switchTextDiv) {
+	var ele = document.getElementById(showHideDiv);
+	var text = document.getElementById(switchTextDiv);
+	if(ele.style.display == "block") {
+    		ele.style.display = "none";
+//              text.innerHTML = "restore";
+  	}
+	else {
+		ele.style.display = "block";
+//              text.innerHTML = "collapse";
+	}
+}
+</script>
+
+</head>
+
+
+<body>
+<h2 align="center"> Research in Mathematical Sciences (ECMM736), Algebra</h2>
+
+The ELE page for <a href = "http://vle.exeter.ac.uk/course/view.php?id=2910">
+Research in Mathematical Sciences (ECMM736)</a>.
+
+
+<h3><a id="myHeader1" href="javascript:toggle('myContent1','myHeader1');">Remarks about the course</a></h3>
+<div id="myContent1" style="display: none">
+
+<h4>About the course structure:</h4>
+&nbsp The topic Algebra is organised as a reading course.
+The first three weeks of meetings I will explain the very basics of the representation theory of finite groups. During this part of the course you should look in one of the three books from the literature list below (James & Liebeck, Alperin & Bell, or Serre) and by for a basic result for your first write-up (see CA1 below). The idea is that my lectures should provide you with the basic knowledge to read parts of (one of) these books. After each lecture I will indicate what you should be able to read.<br>
+&nbsp In the second part of the course we continue with the students that chose from their initial two topics Algebra as their final topic. These students will focus on a somewhat more advanced topic in one of the three mentioned books. The 5 to 6 hours during this second part of the course where I will be present will partly be 15-20 minute presentations by the students and partly question/discussion sessions.<br>
+
+<h4>Provisional details of assessment:</h4>
+<ul>
+<li> CA1 is a short essay (max. 1000 words): Give a short write-up of at least one basic result (e.g. number of irreps=number of conjugacy classes) preceded by the relevant definitions (e.g. conjugacy class) and, if possible, a sketch of the proof. These definitions might partly be covered in my first three lectures.
+<li> CA2 is a 10 minute presentation: This should be about something from the Algebra topic that you found most interesting <b>and</b> that can be understood by a general audience. All students and all lecturers for the course will be present and after your presentation students and lecturers will get the opportunity to ask you some questions.
+<li> CA3 is a report (max 4000 words): This must be about the somewhat more advanced topic that you chose in the second part of the course. For example,  Integrality properties of characters, or Induced representations, or The centre of the group algebra and the primitive  idempotents. I will probably also ask you to answer a few exercises from one or more of the books from the literature list.
+
+
+</ul>
+Note:<br>
+Most of this module will be driven by your own initiative and curiosity and the expectation is that the only lecturer-led meeting will be one hour per week. For the further topic, you will be expected to coordinate an extra hour meeting of all those studying the further topic and put in extra effort to private study for this module.
+
+<h4><a id="Header_Rules" href="javascript:toggle('Content_Rules','Header_Rules');">Rules for citation in your reports</a></h4>
+<div id="Content_Rules" style="display: none">
+<ul>
+<li> 1. I encourage you to use the web (e.g. wikipedia) to find information,
+but please don't refer to web pages, except if they are preprints
+(=preliminary version of a research paper, to be submitted to a journal).
+You should only cite published books, papers published in peer reviewed
+journals and preprints of papers that have been or will be submitted to
+peer reviewed journals.
+<li> 2. The proper publication details of most books and papers in mathematics (at
+least pure mathematics) can be found on <a href="http://www.ams.org/mathscinet/search.html">mathscinet</a>.<br>
+For example, if I type in "Serre" for author and "Linear Representations of Finite Groups"
+for title, then I get<br>
+"MR0450380 Reviewed Serre, Jean-Pierre Linear representations of finite groups. Translated from the second French edition by Leonard L. Scott. Graduate Texts in Mathematics, Vol. 42. Springer-Verlag, New York-Heidelberg, 1977. x+170 pp. ISBN: 0-387-90190-6 (Reviewer: W. Feit) 20CXX"<br>
+from which I extract:<br>
+J.-P Serre, Linear representations of finite groups, Translated from the second French edition by Leonard L. Scott, Graduate Texts in Mathematics, Vol. 42, Springer-Verlag, New York-Heidelberg, 1977.<br>
+Or a bit more brief:<br>
+J.-P Serre, Linear representations of finite groups, Translated from the second French edition, Springer-Verlag, New York-Heidelberg, 1977.
+<li> 3. Label your references (e.g. with numbers) and make sure that each item
+in the bibliography is cited at least once. You cite a book or paper whenever
+you use a result from it.<br>
+Example in LaTeX (LaTeX it at least twice):
+<pre style="word-wrap: break-word;">
+\documentclass[a4paper,11 pt]{amsart}
+\begin{document}
+By \cite[Theorem~20]{Serre}....
+.......
+\begin{thebibliography}{99}
+\bibitem{Serre} J.~P.~Serre, {\it Linear Representations of Finite Groups}, Translated from the second French edition by Leonard L. Scott, Graduate Texts in Mathematics, Vol. 42, Springer-Verlag, New York-Heidelberg, 1977.
+\end{thebibliography}
+\end{document}
+</pre>
+
+</ul>
+</div>
+
+<h4>Prerequisites:</h4>
+<ul>
+<li> Vectors and Matrices (ECM1701)
+<li> Numbers, Symmetries and Groups (ECM1706)
+<li> Linear Algebra (ECM2712)
+<li> Groups, Rings and Fields (ECM2711)
+</ul>
+
+<b>The literature for this topic:</b><br>
+<!--Note: Download by right clicking on the pdf or djvu link; djvu files can, amongst other programs, be viewed with <a href = "http://www.stdutility.com/stduviewer.html">STDU Viewer</a>.-->
+<ul>
+<li>G. James and M. Liebeck, <i>Representations and characters of groups</i>, Second edition, Cambridge University Press, New York, 2001.
+<!--<a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/Res_Math_Sci/Representations_and_Characters_of_Groups.pdf">pdf-file</a><br>-->
+<li>Chapter 5,6 of J. L. Alperin and R. B. Bell, <i>Groups and Representations</i>, Graduate Texts in Mathematics 162, Springer-Verlag, New York, 1995.
+<!--<a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/Res_Math_Sci/Groups_and_Representations.djvu">djvu-file</a>-->
+<li>J.-P Serre, <i>Linear representations of finite groups</i>, Translated from the second French edition by Leonard L. Scott, Graduate Texts in Mathematics, Vol. 42, Springer-Verlag, New York-Heidelberg, 1977.
+<!--<a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/Res_Math_Sci/Linear_representations_of_finite_groups.pdf">pdf-file</a>-->
+<!--<a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/Res_Math_Sci/Linear_representations_of_finite_groups.djvu">djvu-file</a>-->
+</ul>
+Further literature (NOT compulsary):<br>
+<li>Chapter 7 of P. M. Cohn, <i>Algebra</i>, Vol 2, Second edition, John Wiley & Sons, Ltd., Chichester, 1989.
+<!--<a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/Res_Math_Sci/Cohn_Algebra.pdf">pdf-file</a><br>-->
+<li>Chapter XVIII of S. Lang, <i>Algebra</i>, Revised third edition, Undergraduate Texts in Mathematics, Springer-Verlag, New York, 2002.
+<!--<a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/Res_Math_Sci/Lang_Algebra.djvu">djvu-file</a>-->
+</div>
+
+
+<h3><a id="myHeader2" href="javascript:toggle('myContent2','myHeader2');">Remarks about the lectures</a></h3>
+<div id="myContent2" style="display: none">
+<ul>
+<li> The lecture on 8-10-2013.<br>
+Note that we do not have complete uniqueness (only up to isomorphism):<br>
+Let a group $G$ act trivially on $V=\mathbb R^2$ (i.e. $g\cdot v=v$ for all $v\in V$ and $g\in G$).<br>
+Put $V_1=\{(a,0)\,|\,a\in \mathbb R\}$, $V_2=\{(0,a)\,|\,a\in \mathbb R\}$ and $V_3=\{(a,a)\,|\,a\in \mathbb R\}$.<br>
+Then $V_1,V_2,V_3$ are irreducible $G$-modules (they are one-dimensional) and $\mathbb R^2=V_1\oplus V_2$, but also
+$\mathbb R^2=V_1\oplus V_3$ and $\mathbb R^2=V_2\oplus V_3$.<br>
+Since $V_1,V_2,V_3$ are all isomorphic to each other (they are all isomorphic to the irreducible trivial representation of $G$),
+this does not contradict the uniqueness up to isomorphism.
+</ul>
+</div>
+
+</body>
+</html>
+
+
+<!--
+<ul>
+<li> The lecture on Tuesday 25-9-2012.<br>
+Serre writes $\rho_s$ and $\rho_s(x)$ rather than $\rho(s)$ and $s\cdot x\big(=\rho(s)(x)\big)$.
+<li> The lecture on Tuesday 2-10-2012.<br>
+&nbsp In the remainder of the course we will not use quotient modules and we will only be dealing with finite dimensional representations of finite groups over fields of characteristic $0$. In particular, all representations we consider will be completely reducible.<br>
+&nbsp Compare the definition of an irreducible module to the definition of a prime number and Maschke's theorem to the existence of the prime factorisation.
+There is also a uniqueness part (just like the uniqueness of the prime factorisation). This will be treated in later lectures by the students. See Cor. 1 to Thm. 4 on p. 16 of Serre's book.<br>
+&nbsp<b>Exercise</b>: Let $F$ be a field of characteristic $0$ and let the symmetric group $S_n$ act linearly on $V=F^n$ by $\pi\cdot x=x\circ\pi^{-1}$, i.e. by $\pi\cdot e_i=e_{\pi(i)}$ where $e_i$ is the $i$-th standard basis vector. Write $V$ as a direct sum of irreducible modules. Ask me for help if  you get stuck.
+<li> The lecture on Tuesday 9-10-2012.<br>
+&nbsp Notions to familiarise yourself with:<br>
+the trace of a matrix or a linear transformation, conjugacy classes in a group, bilinear maps/forms, and scalar products (=complex inner products).<br>
+&nbsp In the second edition of Serre's book scalar products are linear in the first argument and conjugate linear (semilinear) in the second argument. In the first (French) edition which I consulted during the lecture it's the other way around. The precise definition of a scalar (or inner) product on a complex vector space $V$ is as follows.<br>
+It is a map $(-|-):V\times V\to\mathbb C$ which is linear in the first argument, satisfies $(x|y)=\overline{(y|x)}$ for all $x,y\in V$ and for which $(x|x)$ is real and $>0$ for all $x\in V$ nonzero. From the first two properties it follows that it is conjugate linear in the second argument. Standard example: $V=\mathbb C^n$ and $(x|y)=\sum_{i=1}^nx_i\overline{y_i}$.<br>
+&nbsp Let $\rho:G\to{\rm GL}(V)$ and $\sigma:G\to{\rm GL}(W)$ be representations of $G$. A linear map $f:V\to W$ is called a <i>homomorphism</i> (of representations or $FG$-modules) if $$f\circ\rho(s)=\sigma(s)\circ f$$ for all $s\in G$. In the notation which suppresses $\rho$ (and $\sigma$) this reads: $$f(s\cdot x)=s\cdot f(x)$$ for $x\in V$ and all $s\in G$. As usual, an <i>isomorphism</i> is a bijective homomorphism.
+<li> The lecture on Tuesday 16-10-2012.<br>
+So there are two ways to determine the multiplicities of the irreducible $FG$-modules $W_i$ with characters $\chi_i$, $i=1,\ldots,h$ in an $FG$ module $V$ with character $\varphi$.<br>
+You compute the scalar products $(\varphi|\chi_i)$ (only the ones you are interested in) or you write $\varphi$ as a linear combination of the $\chi_i$. In the latter case you represent the characters as vectors of length $h$ by specifying their values on the conjugacy classes and then it is a matter of linear algebra: the multipicities (all at once) can found by solving a system of linear equations.<br>
+You can try this out on some examples in Section 5 of Serre's book.
+<li> The lecture on Tuesday 23-10-2012.<br>
+So induction is a process which associates to a representation $(W,\theta)$ of a subgroup $H$ of $G$ a representation $(V,\rho)$ of $G$. We have ${\rm dim}(V)=(G:H){\rm dim}(W)$, where $(G:H)=|G|/|H|$ is the index of $H$ in $G$. To be a bit more precise, the induced representation comes together with an injective homomorphism $W\to V$ of $FH$-modules (representations of $H$ over $F$). Put somewhat less formally, the original representation $W$ is embedded as an $H$-stable subspace in the induced representation $V$.
+<li> The lecture on Tuesday 30-10-2012.<br>
+The reason for my confusion in the lecture was that the $3$-cycles $(1,2,3)$ and $(1,3,2)$ are conjugate in $S_4$, but not in $A_4$. More precisely, the $S_4$-conjugacy class of the eight $3$-cycles is contained in $A_4$ and splits there in two $A_4$-conjugacy classes each consisting of four $3$-cycles.
+</ul>
+</div>
+
+<h3><a id="myHeader3" href="javascript:toggle('myContent3','myHeader3');">About the second part of the course</a></h3>
+<div id="myContent3" style="display: none">
+The lectures will just be question/discussion sessions.
+Your final write-up should be about your favourite topic(s) from the list below $+$ your solutions to the $5$ execises below. Although you focus on your own topic, you should make sure that you know enough about the other topics to do the exercises.<br><br>
+<b>Topics:</b>
+<ul>
+<li> The group algebra (6.1-6.3)
+<li> Integrality properties, algebraic integers (6.4, 6.5)
+<li> Induced representations (7.1-8.2)
+<li> Special groups (8.3, 8.4)
+</ul>
+We may skip certain parts of certain topics.<br><br>
+<b>Exercises:</b>
+<ul>
+<li> Exercise 2.3 from Serre's book.
+<li> Exercise 2.6 from Serre's book.
+<li> Exercise 3.5 from Serre's book.
+<li> Exercise 7.4 from Serre's book. This is an application of Mackey's irreducibility criterion. Ignore the "Compute $\chi_\omega$.".
+<li> Let $F$ be a field of characteristic $0$ and let the symmetric group $S_n$ act linearly on $V=F^n$ by $\pi\cdot x=x\circ\pi^{-1}$, i.e. by $\pi\cdot e_i=e_{\pi(i)}$ where $e_i$ is the $i$-th standard basis vector.<br>Write $V$ as a direct sum of irreducible modules. 
+</ul>
+For the rules about citations in your reports, see "Remarks about the course".
+<h4>Remarks about the lectures:</h4>
+<ul>
+<li> The lecture on Tuesday 13-10-2012.<br>
+I recall some definitions:
+<ul>
+<li> &nbsp An (associative, unital) <i>algebra</i> over a field $F$ is a vector space $A$ over $F$ with a bilinear map $(a,b)\mapsto ab:A\times A\to A$ which is associative and has a unit element. You obtain the definition of a ring by replacing "vector space over $F$" by "abelian group" and "bilinear" by "biadditive".<br>
+&nbsp A standard example of an algebra over $F$ is the algebra ${\rm End}_F(V)$ of linear maps $:V\to V$ for a vector space $V$ over $F$. If $V$ has dimension $n$, then this algebra is isomorphic to the algebra ${\rm Mat}_n(F)$ of $n\times n$-matrices over $F$.
+<li> If $A$ and $B$ are algebras over $F$ then a <i>homomorphism of algebras</i> is a linear map $f:A\to B$ which maps the unit of $A$ to that of $B$ and satisfies $f(ab)=f(a)f(b)$ for all $a,b\in A$.
+<li> &nbsp A <i>representation</i> of an algebra $A$ over $F$ or an <i>$A$-module</i> is a vector space $V$ over $F$ together with a homomorphism $\rho:A\to{\rm End}_F(V)$. The homomorphism $\rho$ can also be replaced by a bilinear map $(a,v)\mapsto av: A\times V\to V$ satisfying certain properties. I leave it to you to find out what these properties are and why the two definitions are "equivalent".<br>
+&nbsp Notice the anology with the definition of a representation of a group. An important difference is that the field $F$ cannot be chosen, but has to be the same as the field over which $A$ is an algebra. The representations of a finite group $G$ over a field $F$ are in 1-1 correspondence with the representations of the group algebra $FG$ of $G$ over $F$.<br>
+&nbsp The notions of submodule, quotient module, direct sum, irreducible (simple) module and completely reducible (semisimple) module are defined completely the same as for group representations.
+<li> &nbsp An algebra $A$ over $F$ is called <i>semisimple</i> if all its representations are semisimple. So Maschke's Theorem (Theorem 1 in Serre's book) says that If $G$ is a finite group and $F$ is a field of characteristic $0$, then the algebra $FG$ is semisimple.<br>
+&nbsp Wedderburn's Theorem says that every semisimple algebra is isomorphic to a direct sum of matrix algebras.<br>
+The idea of the group algebra is that to understand the representations of a finite group $G$ over a field $F$ it is enough to understand the group algebra $FG$ (Serre writes $F[G]$) of $G$ over $F$. Especially when $F$ has characteristic $0$, $FG$ is a much simpler object than $G$ (just think of Wedderburn's Theorem). 
+</ul>
+For more about algebras and their representations I refer to Chapter 5 of the book by Alperin and Bell. See the literature list in "Remarks about the course".
+<li> The lecture on Tuesday 20-10-2012.<br>
+&nbsp So the main properties of algebraic integers are:
+<ul>
+<li> The algebraic integers form a subring of $\mathbb{C}$.
+<li> If an algebraic integer is rational, then it is an integer.
+</ul>
+The main application of algebraic integers (in Serre's book) is the result that the degrees of the irreducible representations divide the group order.<br>
+&nbsp Let $A$ be an algebra. A <i>subalgebra</i> of $A$ is a subspace of $A$ which is closed under multiplication and contains the unit of $A$. A subspace $I$ of $A$ is called an <i>ideal</i> of $A$ if for all $x\in A$ and $y\in I$ we have $xy\in I$. The image of an algebra homomorphism is always a subalgebra, it's kernel is always an ideal. If $A$ and $B$ are algebras, then they are embedded as ideals in the direct sum $A\oplus B$ by $$x\mapsto(x,0_B):A\to A\oplus\{0_B\}\ \ \text{and}\ \ y\mapsto(0_A,y):B\to \{0_A\}\oplus B\,.$$ These ideals are algebras in their own right, but they are not subalgebras. The unit of $A\oplus\{0_B\}$ is $(1_A,0_B)$ and the unit of $\{0_A\}\oplus B$ is $(0_A,1_B)$. These are two idempotents in $A\oplus B$ and their sum is the unit $(1_A,1_B)$ of $A\oplus B$. Usually we just write $A\oplus\{0\}$, $(1,0)$, $(1,1)$ etc., omitting the subscripts.
+<li> The lecture on Tuesday 27-10-2012.<br>
+The main results on induction are:
+<ul>
+<li> Frobenius reciprocity (Thm 13). The name of the theorem comes from Prop 21.
+<li> Mackey's criterion for irreducibility (Prop. 23). In (b) you may replace "$s\in G-H$" by "$s\in S-H$" (other notation "$s\in S\setminus H$"). Since in this section the elements $s$ are usually representants of double cosets this was probably what was meant, as can also be deduced from the proof.
+</ul>
+
+</ul>
+For the next lecture (December 4) please read through Section 8.3 and 8.4 of Serre's book (ignore supersolvable groups).
+
+-->
+

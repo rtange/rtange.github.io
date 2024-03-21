@@ -1,0 +1,113 @@
+<html>
+<!-- comments are added like this -->
+<head>
+<title> Introduction to Lie algebras (MA3415) </title>
+
+<!--the script below is for displaying LaTeX code-->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript"
+ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<!--the script below is for hiding and showing content-->
+<script language="javascript">
+function toggle(showHideDiv, switchTextDiv) {
+	var ele = document.getElementById(showHideDiv);
+	var text = document.getElementById(switchTextDiv);
+	if(ele.style.display == "block") {
+    		ele.style.display = "none";
+//              text.innerHTML = "restore";
+  	}
+	else {
+		ele.style.display = "block";
+//              text.innerHTML = "collapse";
+	}
+}
+</script>
+
+</head>
+
+
+<body>
+<h2 align="center"> Introduction to Lie algebras (MA3415) </h2>
+
+The departmental page for <a href = "http://www.maths.tcd.ie/pub/official/Courses11-12/MA3415.html">
+Introduction to Lie algebras (MA3415)</a>.
+
+
+<h3><a id="myHeader1" href="javascript:toggle('myContent1','myHeader1');">Remarks about the course</a></h3>
+<div id="myContent1" style="display: none">
+Coursework will count for 15% of the final grade.<br><br>
+
+Lie algebras should be thought of as the infinitesimal analogue of groups. Lie theory is an important and very active branch of mathematics with many links to other areas: geometry, representation theory, mathematical physics....<br><br>
+
+The only prerequisites for this course are linear algebra and some knowledge about groups and rings. However, it would be good to get some idea about the natural companion to Lie algebras: Lie groups. For this one needs some idea of what a smooth manifold is: smooth functions on a manifold, the tangent space at a point, a vector field on a manifold. Everything about Lie groups is NON-EXAMINABLE and only to help your own understanding.<br><br>
+
+The pdf document <i>Lie_algebras_are_infinitesimal_groups</i> below explains why Lie algebras should be thought of as infinitesimal groups. It is probably best to ignore all formalities and just think of $\delta$ and $\eta$ as ordinary numbers and calculate upto the first order.<br><br>
+
+The formal definitions of a Lie group and of an algebraic group, the definition of the Lie algebra of a Lie group, and a small guide to the literature can be found in the pdf document <i>further_notes</i> below. Of course this material is much more advanced and you will probably have to do some further reading before you really understand it.
+<ul>
+<li><a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/lie_algebras/Lie_algebras_are_infinitesimal_groups.pdf">Lie_algebras_are_infinitesimal_groups.pdf</a>
+<li><a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/lie_algebras/further_notes.pdf">further_notes.pdf</a>
+</ul>
+</div>
+
+
+<h3><a id="myHeader2" href="javascript:toggle('myContent2','myHeader2');">Learning outcomes</a></h3>
+<div id="myContent2" style="display: none">
+On successful completion of this module, students will be able to:
+<ul>
+<li>Give the definitions of: Lie algebra, homomorphism of Lie algebras, subalgebra, ideal, derivation, centre, representation of a Lie algebra, submodule, irreducible module, homomorphism of g-modules, the Killing form of a Lie algebra and the trace form of a classical Lie algebra, the derived and descending central series of a Lie algebra, nilpotent Lie algebra, solvable Lie algebra, solvable radical, semisimple and simple Lie algebra, maximal toral subalgebra, root system, irreducible root system.
+<li>Give the definitions of and calculate with the classical Lie algebras.
+<li>Describe the construction of the irreducible representations of sl_2.
+<li>State Engel's Theorem, Lie's Theorem and Cartan's Criterion.
+<li>Describe the direct sum decomposition into simple ideals and the Jordan-Chevalley decomposition for semisimple Lie algebras.
+<li>Indicate how root systems correspond to semisimple Lie algebras and give the root space decomposition and root system of sl_n.
+</ul>
+</div>
+
+
+<h3><a id="myHeader3" href="javascript:toggle('myContent3','myHeader3');">Remarks about the lectures</a></h3>
+<div id="myContent3" style="display: none">
+<ul>
+<li> Monday 17-10-2011: A simple example of a generalised eigenspace decomposition. Take $V=\mathbb{F}^2$ and $\mathfrak{t}\subseteq{\rm Mat}_2(\mathbb{F})$ the diagonal matrices. We consider $2\times 2$ matrices as endomorphisms of $V$ by letting them act on column vectors by matrix multiplication. Then $V=V_{\lambda_1}\oplus V_{\lambda_2}$ and $V_{\lambda_i}=\mathbb{F}e_i$, where $\lambda_i\in\mathfrak{t}^*$ is defined by $\lambda_i(D)=d_i$ for $D=\left[\begin{matrix} d_1 & 0 \\ 0 & d_2 \end{matrix}\right]\in\mathfrak{t}$ and $e_i$ is the $i$-th standard basis vector of $V$.
+<li> Tuesday 18-10-2011: I forgot to give the explicit formula for the action of $\mathfrak{sl}_2(\mathbb{F})$ on $\mathbb{F}[x,y]$. It follows immediately from the formulas for the action on $x$ and $y$ and the formula in Lemma 1(i). For $X=\left[\begin{matrix} a & b \\ c & -a \end{matrix}\right]\in\mathfrak{sl}_2(\mathbb{F})$ and $P\in\mathbb{F}[x,y]$ we have $$X\cdot P=(ax+cy)\frac{\partial P}{\partial x}+(bx-ay)\frac{\partial P}{\partial y}\ .$$<br>
+About the notion of complete reducibility. I called a $\mathfrak{g}$-module <i>completely reducible</i> (also: <i>semisimple</i>) if it is a direct sum of irreducible (also: simple) $\mathfrak{g}$-modules. This is equivalent to: every submodule has a direct complement, i.e. there exists a submodule such that the whole module is the direct sum of the two. One direction is easy to prove. All this also applies to representations of groups or associative algebras (in case you know what that is).<br>
+Direct sum decompositons of a semisimple module into irreducibles are not unique. You should think of them as somewhat comparable to bases of a vector space. For example, if the sum of a family of submodules of a semisimple module $M$ is direct, then we can extend this family to a family of irreducible submodules of $M$ such that $M$ is their direct sum. This is similar to the fact that every independent set in a vector space can be extended to a basis. Of course all $1$-dimensional vector spaces are isomorphic, but this is not true for irreducible modules.
+<li> Tuesday 15-11-2011: The proof of Theorem 9 should have ended as follows.<br>
+Finally, let $\mathfrak{a}$ be an arbitrary simple ideal of $\mathfrak{g}$. Then $[\mathfrak{a},\mathfrak{g}]\ne\{0\}$, since $[\mathfrak{a},\mathfrak{a}]\ne\{0\}$. So $[\mathfrak{a},\mathfrak{g}_j]\ne\{0\}$ for some $j$, since $\mathfrak{a}=\bigoplus_{i=1}^k\mathfrak{g}_i$. But $\mathfrak{g}_j$ and $\mathfrak{a}$ are simple, so $\mathfrak{a}=[\mathfrak{a},\mathfrak{g}_j]=\mathfrak{g}_j$. Assertion (ii) now follows.
+<li> Tuesday 29-11-2011: A <i>hyperplane</i> or <i>maximal subspace</i> of a finite dimensional vector space $V$ is a subspace of codimension one, i.e. of dimension ${\rm dim}(V)-1$. Sometimes people do not require a hyperplane to go through the origin, so these hyperplanes are of the form $v+H$ where $v\in V$ and $H$ is a hyperplane in our sense. The hyperplanes of $V$ can be characterised as the kernels of the nonzero linear functionals on $V$.<br>
+Now assume that $V$ is an inner product space over $\mathbb{R}$ and let $v\in V$ be nonzero. Then $H_v:=v^\perp=\{w\in V\,|\,(w,v)=0\}$ is a hyperplane of $V$ and $V=H_v\oplus\mathbb{R}v$. The <i>(orthogonal) reflection in the hyperplane $H_v$</i> is the linear map $r_v:V\to V$ defined by $$r_v(w)=w_{H_v}-w_{\mathbb{R}v}=w-2w_{\mathbb{R}v}\,,$$ where $w_H$ and $w_{\mathbb{R}v}$ are the unique vectors with $w_H\in H_v$, $w_{\mathbb{R}v}\in\mathbb{R}v$ and $w=w_H+w_{\mathbb{R}v}$. Note that $r_v$ fixes $H_v$ and sends $v$ to $-v$. Since $w_{\mathbb{R}v}=\frac{(w,v)}{(v,v)}v$, we obtain the formula from the lectures $$r_v(w)=w-(w,v^\vee)v\,,$$ where $v^\vee=\frac{2}{(v,v)}v$.
+</ul>
+</div>
+
+<h3> Exercises sheets </h3>
+<ul>
+<li><a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/lie_algebras/sheet1.pdf">sheet 1</a>,
+   <!--  <a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/lie_algebras/sol1.pdf">solutions 1</a>.-->
+<li><a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/lie_algebras/sheet2.pdf">sheet 2</a> (assignment; deadline: Friday October 14),
+   <!--  <a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/lie_algebras/sol2.pdf">solutions 2</a>.-->
+<li><a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/lie_algebras/sheet3.pdf">sheet 3</a> (assignment; deadline: Friday October 21),
+   <!--  <a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/lie_algebras/sol3.pdf">solutions 3</a>.-->
+<li><a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/lie_algebras/sheet4.pdf">sheet 4</a>,
+   <!--  <a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/lie_algebras/sol4.pdf">solutions 4</a>.-->
+<li><a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/lie_algebras/sheet5.pdf">sheet 5</a> (assignment; deadline: Friday November 4),
+   <!--  <a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/lie_algebras/sol5.pdf">solutions 5</a>.-->
+<!-- <br> Hint for Question 11: The general idea is as follows. Choose a basis $(X_1,\ldots,X_m)$ of $\mathfrak{g}$. Let $Z\in\mathfrak{g}$. Write $Z=\sum_{i=1}^mz_iX_i$. Now show that $[Z,X_k]=0$ for all $k$ implies that all $z_i$ are $0$. In the given cases it might be better to modify this idea slightly. You work with two bases: the elementary matrices $E_{ij}$ which form a basis of $\mathfrak{gl}_n$ and some obvious basis $(X_1,\ldots,X_m)$ of $\mathfrak{g}$. You write $Z=\sum_{i,j=1}^nz_{ij}E_{ij}$. Then you show that $Z\in\mathfrak{g}$ (this amounts to certain conditions on the $z_{ij}$) and $[Z,X_k]=0$ for all $k$ together imply that all $z_{ij}$ are $0$.-->
+<li><a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/lie_algebras/sheet6.pdf">sheet 6</a> (assignment; deadline: Friday November 11),
+   <!--  <a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/lie_algebras/sol6.pdf">solutions 6</a>.-->
+<!-- <br> Hint: The basis in (i) is rather obvious. For the question about the semisimple action of $H$ in (ii) you should use the theorem on complete reducibility (Thm 3(ii) from the lectures) together with what you know from (i) about the action of $H$ on irreducible modules. For the question about $E$ and $F$ in (ii) you use the following fact. For every representation $\rho:\mathfrak{g}\to\mathfrak{gl}(V)$ of a Lie algebra $\mathfrak{g}$ we have for all $X,Y\in\mathfrak{g}$ that $\rho([X,Y])=\rho(X)\rho(Y)-\rho(Y)\rho(X)$, i.e. $X\cdot(Y\cdot v)=[X,Y]\cdot v+Y\cdot(X\cdot v)$ for all $v\in V$. You apply this to $\mathfrak{g}=\mathfrak{sl}_2(\mathbb{C})$ with $(X,Y)=(H,E)$ and $(X,Y)=(H,F)$.-->
+<li><a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/lie_algebras/sheet7.pdf">sheet 7</a> (assignment; deadline: Friday November 25),
+   <!--  <a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/lie_algebras/sol7.pdf">solutions 7</a>.-->
+<li><a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/lie_algebras/sheet8.pdf">sheet 8</a> (final assignment; deadline: Friday December 2),
+   <!-- <a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/lie_algebras/sol8.pdf">solutions 8</a>.-->
+<!-- <br> Hint for Question 16: You may use that ad$H$ ($H=\left[\begin{matrix} 1 & 0 \\ 0 & -1 \end{matrix}\right]$) acts semisimply on $\mathfrak{g}=\mathfrak{sl}_2(\mathbb{C})$ and therefore also on any ad$H$-stable subspace of $\mathfrak{g}$ (e.g. an ideal of $\mathfrak{g}$). So if such a subspace is nonzero, then it must contain a nonzero ad$H$-eigenvector.<br>
+Hint for Question 17: First you show that the given subspace is a solvable ideal. Then you show that the quotient by it is semisimple.-->
+<li><a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/lie_algebras/sheet9.pdf">sheet 9 (final exercise sheet)</a>,
+<!-- <a href = "http://www1.maths.leeds.ac.uk/~pmtrt/teaching/old_courses/lie_algebras/sol9.pdf">solutions 9</a>.-->
+</ul>
+</body>
+</html>
+
